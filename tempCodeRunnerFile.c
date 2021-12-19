@@ -1,2 +1,0 @@
-printf("##%s##", token);
-      token
