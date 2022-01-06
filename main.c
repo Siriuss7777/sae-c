@@ -5,8 +5,8 @@
 #include <string.h>
 
 #define SHORT_CHAR 20
-#define LONG_CHAR 60
-#define LONG_LONG_CHAR 120
+#define LONG_CHAR 40
+#define LONG_LONG_CHAR 140
 #define PATH "test.csv"
 #define CACHE "cache.txt"
 
@@ -15,192 +15,80 @@ typedef struct client
     char prenom[SHORT_CHAR],
         nom[SHORT_CHAR],
         ville[LONG_CHAR],
-        code_postal[LONG_CHAR],
+        code_postal[SHORT_CHAR],
         tel[SHORT_CHAR],
         mail[LONG_CHAR],
         job[SHORT_CHAR];
 } Client;
 
-bool startswith(char *prefixe, char *texte)
-{ // Bastien
-  return strncmp(prefixe, texte, strlen(prefixe)) == 0;
-}
-
-char *charger_clients(char *chemin)
+void loadClients(Client list[])
 {
-  char ligne[LONG_LONG_CHAR];
+    char line[LONG_LONG_CHAR];
 
-  FILE *fic = fopen(chemin, "r");
-  if (fic == NULL)
-  {
-    printf("Erreur: problème d'ouverture du fichier annuaire");
-    exit(EXIT_FAILURE);
-  }
+    FILE *file = fopen(PATH, "r");
+    int clientCount = 0;
 
-  FILE *cache = fopen(CACHE, "a");
-  if (cache == NULL)
-  {
-    printf("Erreur: problème d'ouverture du fichier cache");
-    exit(EXIT_FAILURE);
-  }
-
-  while (fgets(ligne, LONG_LONG_CHAR, fic) != NULL)
-  {
-
-    char c = '\0';
-    char *token = strtok(ligne, "\n");
-
-    while (token != NULL)
+    while (fgets(line, LONG_LONG_CHAR, file) != NULL)
     {
-      char *line = malloc(LONG_LONG_CHAR);
-      memcpy(line, token, LONG_LONG_CHAR);
-      char *c_token = strtok(line, ",");
-      while (c_token != NULL)
-      {
-        if (strlen(c_token)!=0){
-          printf("%s | ", c_token);
-        }else{
-          printf(" | ");
+        int i;
+        while(line[i] != '\n'){
+            if(line[i] == ',' && line[i+1] == ','){
+                while(line[i]!='\n'){
+                    line[i+1]=line[i];
+                    printf("shift ligne %d\n", i);
+                }
+                line[i]=' ';
+            }
         }
-        c_token = strtok(NULL, ",");
-      }
-      free(line);
-      printf("\n");
-      fprintf(cache, "%s\n", token);
-      token = strtok(NULL, "\n");
+        char *token = strtok(line, ",");
+        int count=0;
+        clientCount++;
+        while (token != NULL)
+        {
+            if(count==0){
+                memcpy(list[clientCount].prenom, token, SHORT_CHAR);
+                printf("client %d: %s | ", clientCount ,list[clientCount].prenom);
+            }else if(count==1){
+                memcpy(list[clientCount].nom, token, SHORT_CHAR);
+                printf("%s | ", list[clientCount].nom);
+            }else if(count==2){
+                memcpy(list[clientCount].ville, token, LONG_CHAR);
+                printf("%s | ", list[clientCount].ville);
+            }else if(count==3){
+                memcpy(list[clientCount].code_postal, token, SHORT_CHAR);
+                printf("%s | ", list[clientCount].code_postal);
+            }else if(count==4){
+                memcpy(list[clientCount].tel, token, SHORT_CHAR);
+                printf("%s | ", list[clientCount].tel);
+            }else if(count==5){
+                memcpy(list[clientCount].mail, token, LONG_CHAR);
+                printf("%s | ", list[clientCount].mail);
+            }else if(count==6){
+                memcpy(list[clientCount].job, token, SHORT_CHAR);
+                printf("%s", list[clientCount].job);
+            }
+            token=strtok(NULL, ",");
+            count++;
+        }
     }
-  }
 }
 
-void obtenir_client(char *nom, char *prenom, char *contact)
-{ // Bastien
-  char ligne[LONG_LONG_CHAR];
-  int n_client = 1, compteur;
-  Client client;
-
-  FILE *fic = fopen(PATH, "r");
-  if (fic == NULL)
-  {
-    printf("Erreur: problème d'ouverture du fichier annuaire");
-    exit(EXIT_FAILURE);
-  }
-}
-
-void ajouter() // Hédi
-{
-    FILE *file = fopen(PATH, "a");
-
-    if (file == NULL)
-    {
-        printf("Le fichier n'existe pas");
-        exit(EXIT_FAILURE);
-    }
-
-    Client nouveau_client;
-    fflush(stdin);
-    printf("\nEntrez un pr\202nom:");
-    gets(nouveau_client.prenom);
-    printf("\nEntrez un nom:");
-    gets(nouveau_client.nom);
-    printf("\nEntrez une ville :");
-    gets(nouveau_client.ville);
-    printf("\nEntrez un code postal:");
-    gets(nouveau_client.code_postal);
-    printf("\nEntrez le numero de telephone (forme 00.00.00.00.00):");
-    gets(nouveau_client.tel);
-    printf("\nEntrez la mail:");
-    gets(nouveau_client.mail);
-    printf("\nEntrez le travail:");
-    gets(nouveau_client.job);
-
-    fprintf(file, "%s,%s,%s,%s,%s,%s,%s\n", 
-                  nouveau_client.prenom, 
-                  nouveau_client.nom, 
-                  nouveau_client.ville, 
-                  nouveau_client.code_postal, 
-                  nouveau_client.tel, 
-                  nouveau_client.mail, 
-                  nouveau_client.job);
-    fclose(file);
-}
-
-int modifier()
-{
-  printf("Modifier");
-}
-int supprimer()
-{
-  printf("Supprimer");
-}
-int afficher()
-{ // Bastien
-  printf("Afficher");
-}
-int filtrer()
-{
-  printf("Filtrer");
-}
-int chercher()
-{
-  printf("Chercher");
-}
-int donnees_manquantes()
-{
-  printf("Donn\202es manquantes");
-}
-int sauvegarder()
-{
-  printf("Sauvegarder");
-}
-
-int menu() // Hédi
-{
-  int choix;
-  printf("Que voulez vous faire :\n");
-  printf("\t1: Ajouter un client \n");
-  printf("\t2: Modifier un client \n");
-  printf("\t3: Supprimer un client \n");
-  printf("\t4: Afficher tous les données des clients\n");
-  printf("\t5: Afficher les clients avec un filtre\n");
-  printf("\t6: Chercher un client avec une donnée\n");
-  printf("\t7: Clients ayant une donnée manquante (au moins)\n");
-  printf("\t8: Sauvegarder\n");
-  scanf("%d", &choix);
-
-  switch (choix)
-  {
-  case 1:
-    ajouter();
-    break;
-  case 2:
-    modifier();
-    break;
-  case 3:
-    supprimer();
-    break;
-  case 4:
-    afficher();
-    break;
-  case 5:
-    filtrer();
-    break;
-  case 6:
-    chercher();
-    break;
-  case 7:
-    donnees_manquantes();
-    break;
-  case 8:
-    sauvegarder();
-    break;
-
-  default:
-    menu();
-    break;
-  }
-}
+void showClients() {}
 
 int main()
 {
-  menu();
+    int lines = 0;
+    char line[LONG_LONG_CHAR];
+
+    FILE *file = fopen(PATH, "r");
+
+    while (fgets(line, sizeof(line), file) != NULL)
+    {
+        lines++;
+    }
+    fclose(file);
+
+    Client list[lines];
+    loadClients(list);
 }
+
