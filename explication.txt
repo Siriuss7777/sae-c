@@ -1,4 +1,0 @@
-2 Rapports
-Algo:
-	1) Élaboration de l'applicaiton, justification des choix algo
-	2) Comparaison avec un autre binôme
