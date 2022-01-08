@@ -4,6 +4,8 @@
         "loadclients.h": "c",
         "utils.h": "c",
         "string.h": "c",
-        "displayallclients.h": "c"
+        "displayallclients.h": "c",
+        "menu.h": "c",
+        "addclient.h": "c"
     }
 }

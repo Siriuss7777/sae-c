@@ -57,10 +57,10 @@ RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code"
+CMAKE_SOURCE_DIR = C:/Users/le-ga/Desktop/Dev/SAE-C/Code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build"
+CMAKE_BINARY_DIR = C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/CMakeFiles" "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build/CMakeFiles C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,30 @@ lib/displayallclients.s: lib/displayallclients.c.s
 lib/displayallclients.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAE-C.dir/build.make CMakeFiles/SAE-C.dir/lib/displayallclients.c.s
 .PHONY : lib/displayallclients.c.s
+
+lib/displayemptyclients.obj: lib/displayemptyclients.c.obj
+.PHONY : lib/displayemptyclients.obj
+
+# target to build an object file
+lib/displayemptyclients.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAE-C.dir/build.make CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj
+.PHONY : lib/displayemptyclients.c.obj
+
+lib/displayemptyclients.i: lib/displayemptyclients.c.i
+.PHONY : lib/displayemptyclients.i
+
+# target to preprocess a source file
+lib/displayemptyclients.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAE-C.dir/build.make CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.i
+.PHONY : lib/displayemptyclients.c.i
+
+lib/displayemptyclients.s: lib/displayemptyclients.c.s
+.PHONY : lib/displayemptyclients.s
+
+# target to generate assembly for a file
+lib/displayemptyclients.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SAE-C.dir/build.make CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.s
+.PHONY : lib/displayemptyclients.c.s
 
 lib/loadclients.obj: lib/loadclients.c.obj
 .PHONY : lib/loadclients.obj
@@ -288,6 +312,9 @@ help:
 	@echo "... lib/displayallclients.obj"
 	@echo "... lib/displayallclients.i"
 	@echo "... lib/displayallclients.s"
+	@echo "... lib/displayemptyclients.obj"
+	@echo "... lib/displayemptyclients.i"
+	@echo "... lib/displayemptyclients.s"
 	@echo "... lib/loadclients.obj"
 	@echo "... lib/loadclients.i"
 	@echo "... lib/loadclients.s"

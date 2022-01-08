@@ -1,5 +1,5 @@
 CMakeFiles/SAE-C.dir/main.c.obj: \
- C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/main.c \
+ C:/Users/le-ga/Desktop/Dev/SAE-C/Code/main.c \
  c:\mingw\x86_64-w64-mingw32\include\stdlib.h \
  c:\mingw\x86_64-w64-mingw32\include\corecrt.h \
  c:\mingw\x86_64-w64-mingw32\include\_mingw.h \
@@ -22,9 +22,9 @@ CMakeFiles/SAE-C.dir/main.c.obj: \
  c:\mingw\x86_64-w64-mingw32\include\string.h \
  c:\mingw\x86_64-w64-mingw32\include\sec_api\string_s.h \
  c:\mingw\lib\gcc\x86_64-w64-mingw32\9.2.0\include\stdbool.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\utils.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\loadclients.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\utils.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\menu.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\addclient.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\displayallclients.h
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\utils.h \
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\loadclients.h \
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\utils.h \
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\menu.h \
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\addclient.h \
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\displayallclients.h

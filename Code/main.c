@@ -25,14 +25,13 @@ int main()
 
     } while (file == NULL);
 
-
     while (fgets(line, sizeof(line), file) != NULL)
     {
         lines++;
     }
     fclose(file);
 
-    Client *list = (Client*) malloc(sizeof(Client)*lines);
+    Client *list = (Client *)malloc(sizeof(Client) * lines);
     loadClients(list, path);
     Menu(list, lines);
 }

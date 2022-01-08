@@ -10,7 +10,7 @@ void displayAllClients(Client list[], int lines)
     printf("\n%s", CAPTION);
     for (int i = 0; i < lines; i++)
     {
-        displayClient(list, i, 1);
+        displayClient(list, i, 2);
     }
     printf("\n");
     Menu(list, lines);

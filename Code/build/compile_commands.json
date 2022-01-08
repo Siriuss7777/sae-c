@@ -1,32 +1,37 @@
 [
 {
-  "directory": "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build",
-  "command": "C:/MinGW/bin/gcc.exe   -g -o CMakeFiles/SAE-C.dir/main.c.obj -c \"C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/main.c\"",
-  "file": "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/main.c"
+  "directory": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build",
+  "command": "C:/MinGW/bin/gcc.exe   -g -o CMakeFiles/SAE-C.dir/main.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/main.c",
+  "file": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/main.c"
 },
 {
-  "directory": "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build",
-  "command": "C:/MinGW/bin/gcc.exe   -g -o CMakeFiles/SAE-C.dir/lib/utils.c.obj -c \"C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/utils.c\"",
-  "file": "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/utils.c"
+  "directory": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build",
+  "command": "C:/MinGW/bin/gcc.exe   -g -o CMakeFiles/SAE-C.dir/lib/utils.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/utils.c",
+  "file": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/utils.c"
 },
 {
-  "directory": "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build",
-  "command": "C:/MinGW/bin/gcc.exe   -g -o CMakeFiles/SAE-C.dir/lib/menu.c.obj -c \"C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/menu.c\"",
-  "file": "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/menu.c"
+  "directory": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build",
+  "command": "C:/MinGW/bin/gcc.exe   -g -o CMakeFiles/SAE-C.dir/lib/menu.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/menu.c",
+  "file": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/menu.c"
 },
 {
-  "directory": "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build",
-  "command": "C:/MinGW/bin/gcc.exe   -g -o CMakeFiles/SAE-C.dir/lib/loadclients.c.obj -c \"C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/loadclients.c\"",
-  "file": "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/loadclients.c"
+  "directory": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build",
+  "command": "C:/MinGW/bin/gcc.exe   -g -o CMakeFiles/SAE-C.dir/lib/loadclients.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/loadclients.c",
+  "file": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/loadclients.c"
 },
 {
-  "directory": "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build",
-  "command": "C:/MinGW/bin/gcc.exe   -g -o CMakeFiles/SAE-C.dir/lib/addclient.c.obj -c \"C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/addclient.c\"",
-  "file": "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/addclient.c"
+  "directory": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build",
+  "command": "C:/MinGW/bin/gcc.exe   -g -o CMakeFiles/SAE-C.dir/lib/addclient.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/addclient.c",
+  "file": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/addclient.c"
 },
 {
-  "directory": "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build",
-  "command": "C:/MinGW/bin/gcc.exe   -g -o CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj -c \"C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/displayallclients.c\"",
-  "file": "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/displayallclients.c"
+  "directory": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build",
+  "command": "C:/MinGW/bin/gcc.exe   -g -o CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/displayallclients.c",
+  "file": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/displayallclients.c"
+},
+{
+  "directory": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build",
+  "command": "C:/MinGW/bin/gcc.exe   -g -o CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/displayemptyclients.c",
+  "file": "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/displayemptyclients.c"
 }
 ]

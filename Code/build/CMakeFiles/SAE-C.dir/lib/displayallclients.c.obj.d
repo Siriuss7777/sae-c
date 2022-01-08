@@ -1,5 +1,5 @@
 CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj: \
- C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/displayallclients.c \
+ C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/displayallclients.c \
  c:\mingw\x86_64-w64-mingw32\include\stdio.h \
  c:\mingw\x86_64-w64-mingw32\include\crtdefs.h \
  c:\mingw\x86_64-w64-mingw32\include\corecrt.h \
@@ -14,7 +14,7 @@ CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj: \
  c:\mingw\x86_64-w64-mingw32\include\sec_api\stdio_s.h \
  c:\mingw\x86_64-w64-mingw32\include\string.h \
  c:\mingw\x86_64-w64-mingw32\include\sec_api\string_s.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\loadclients.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\utils.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\menu.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\utils.h
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\loadclients.h \
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\utils.h \
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\menu.h \
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\utils.h

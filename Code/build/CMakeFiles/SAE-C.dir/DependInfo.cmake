@@ -8,12 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/addclient.c" "CMakeFiles/SAE-C.dir/lib/addclient.c.obj" "gcc" "CMakeFiles/SAE-C.dir/lib/addclient.c.obj.d"
-  "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/displayallclients.c" "CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj" "gcc" "CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj.d"
-  "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/loadclients.c" "CMakeFiles/SAE-C.dir/lib/loadclients.c.obj" "gcc" "CMakeFiles/SAE-C.dir/lib/loadclients.c.obj.d"
-  "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/menu.c" "CMakeFiles/SAE-C.dir/lib/menu.c.obj" "gcc" "CMakeFiles/SAE-C.dir/lib/menu.c.obj.d"
-  "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/utils.c" "CMakeFiles/SAE-C.dir/lib/utils.c.obj" "gcc" "CMakeFiles/SAE-C.dir/lib/utils.c.obj.d"
-  "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/main.c" "CMakeFiles/SAE-C.dir/main.c.obj" "gcc" "CMakeFiles/SAE-C.dir/main.c.obj.d"
+  "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/addclient.c" "CMakeFiles/SAE-C.dir/lib/addclient.c.obj" "gcc" "CMakeFiles/SAE-C.dir/lib/addclient.c.obj.d"
+  "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/displayallclients.c" "CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj" "gcc" "CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj.d"
+  "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/displayemptyclients.c" "CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj" "gcc" "CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj.d"
+  "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/loadclients.c" "CMakeFiles/SAE-C.dir/lib/loadclients.c.obj" "gcc" "CMakeFiles/SAE-C.dir/lib/loadclients.c.obj.d"
+  "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/menu.c" "CMakeFiles/SAE-C.dir/lib/menu.c.obj" "gcc" "CMakeFiles/SAE-C.dir/lib/menu.c.obj.d"
+  "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/utils.c" "CMakeFiles/SAE-C.dir/lib/utils.c.obj" "gcc" "CMakeFiles/SAE-C.dir/lib/utils.c.obj.d"
+  "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/main.c" "CMakeFiles/SAE-C.dir/main.c.obj" "gcc" "CMakeFiles/SAE-C.dir/main.c.obj.d"
   )
 
 # Targets to which this target links.

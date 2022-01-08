@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code
+# Install script for directory: C:/Users/le-ga/Desktop/Dev/SAE-C/Code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

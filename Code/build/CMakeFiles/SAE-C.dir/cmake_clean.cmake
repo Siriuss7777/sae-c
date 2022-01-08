@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SAE-C.dir/lib/addclient.c.obj.d"
   "CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj"
   "CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj.d"
+  "CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj"
+  "CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj.d"
   "CMakeFiles/SAE-C.dir/lib/loadclients.c.obj"
   "CMakeFiles/SAE-C.dir/lib/loadclients.c.obj.d"
   "CMakeFiles/SAE-C.dir/lib/menu.c.obj"

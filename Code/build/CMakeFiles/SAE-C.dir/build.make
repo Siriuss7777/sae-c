@@ -53,10 +53,10 @@ RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code"
+CMAKE_SOURCE_DIR = C:/Users/le-ga/Desktop/Dev/SAE-C/Code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build"
+CMAKE_BINARY_DIR = C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SAE-C.dir/depend.make
@@ -72,86 +72,100 @@ include CMakeFiles/SAE-C.dir/flags.make
 CMakeFiles/SAE-C.dir/main.c.obj: CMakeFiles/SAE-C.dir/flags.make
 CMakeFiles/SAE-C.dir/main.c.obj: ../main.c
 CMakeFiles/SAE-C.dir/main.c.obj: CMakeFiles/SAE-C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SAE-C.dir/main.c.obj"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SAE-C.dir/main.c.obj -MF CMakeFiles/SAE-C.dir/main.c.obj.d -o CMakeFiles/SAE-C.dir/main.c.obj -c "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/main.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/SAE-C.dir/main.c.obj"
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SAE-C.dir/main.c.obj -MF CMakeFiles/SAE-C.dir/main.c.obj.d -o CMakeFiles/SAE-C.dir/main.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/main.c
 
 CMakeFiles/SAE-C.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SAE-C.dir/main.c.i"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/main.c" > CMakeFiles/SAE-C.dir/main.c.i
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Users/le-ga/Desktop/Dev/SAE-C/Code/main.c > CMakeFiles/SAE-C.dir/main.c.i
 
 CMakeFiles/SAE-C.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SAE-C.dir/main.c.s"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/main.c" -o CMakeFiles/SAE-C.dir/main.c.s
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Users/le-ga/Desktop/Dev/SAE-C/Code/main.c -o CMakeFiles/SAE-C.dir/main.c.s
 
 CMakeFiles/SAE-C.dir/lib/utils.c.obj: CMakeFiles/SAE-C.dir/flags.make
 CMakeFiles/SAE-C.dir/lib/utils.c.obj: ../lib/utils.c
 CMakeFiles/SAE-C.dir/lib/utils.c.obj: CMakeFiles/SAE-C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/SAE-C.dir/lib/utils.c.obj"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SAE-C.dir/lib/utils.c.obj -MF CMakeFiles/SAE-C.dir/lib/utils.c.obj.d -o CMakeFiles/SAE-C.dir/lib/utils.c.obj -c "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/utils.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/SAE-C.dir/lib/utils.c.obj"
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SAE-C.dir/lib/utils.c.obj -MF CMakeFiles/SAE-C.dir/lib/utils.c.obj.d -o CMakeFiles/SAE-C.dir/lib/utils.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/utils.c
 
 CMakeFiles/SAE-C.dir/lib/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SAE-C.dir/lib/utils.c.i"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/utils.c" > CMakeFiles/SAE-C.dir/lib/utils.c.i
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/utils.c > CMakeFiles/SAE-C.dir/lib/utils.c.i
 
 CMakeFiles/SAE-C.dir/lib/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SAE-C.dir/lib/utils.c.s"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/utils.c" -o CMakeFiles/SAE-C.dir/lib/utils.c.s
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/utils.c -o CMakeFiles/SAE-C.dir/lib/utils.c.s
 
 CMakeFiles/SAE-C.dir/lib/menu.c.obj: CMakeFiles/SAE-C.dir/flags.make
 CMakeFiles/SAE-C.dir/lib/menu.c.obj: ../lib/menu.c
 CMakeFiles/SAE-C.dir/lib/menu.c.obj: CMakeFiles/SAE-C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/SAE-C.dir/lib/menu.c.obj"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SAE-C.dir/lib/menu.c.obj -MF CMakeFiles/SAE-C.dir/lib/menu.c.obj.d -o CMakeFiles/SAE-C.dir/lib/menu.c.obj -c "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/menu.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/SAE-C.dir/lib/menu.c.obj"
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SAE-C.dir/lib/menu.c.obj -MF CMakeFiles/SAE-C.dir/lib/menu.c.obj.d -o CMakeFiles/SAE-C.dir/lib/menu.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/menu.c
 
 CMakeFiles/SAE-C.dir/lib/menu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SAE-C.dir/lib/menu.c.i"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/menu.c" > CMakeFiles/SAE-C.dir/lib/menu.c.i
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/menu.c > CMakeFiles/SAE-C.dir/lib/menu.c.i
 
 CMakeFiles/SAE-C.dir/lib/menu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SAE-C.dir/lib/menu.c.s"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/menu.c" -o CMakeFiles/SAE-C.dir/lib/menu.c.s
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/menu.c -o CMakeFiles/SAE-C.dir/lib/menu.c.s
 
 CMakeFiles/SAE-C.dir/lib/loadclients.c.obj: CMakeFiles/SAE-C.dir/flags.make
 CMakeFiles/SAE-C.dir/lib/loadclients.c.obj: ../lib/loadclients.c
 CMakeFiles/SAE-C.dir/lib/loadclients.c.obj: CMakeFiles/SAE-C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/SAE-C.dir/lib/loadclients.c.obj"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SAE-C.dir/lib/loadclients.c.obj -MF CMakeFiles/SAE-C.dir/lib/loadclients.c.obj.d -o CMakeFiles/SAE-C.dir/lib/loadclients.c.obj -c "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/loadclients.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/SAE-C.dir/lib/loadclients.c.obj"
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SAE-C.dir/lib/loadclients.c.obj -MF CMakeFiles/SAE-C.dir/lib/loadclients.c.obj.d -o CMakeFiles/SAE-C.dir/lib/loadclients.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/loadclients.c
 
 CMakeFiles/SAE-C.dir/lib/loadclients.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SAE-C.dir/lib/loadclients.c.i"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/loadclients.c" > CMakeFiles/SAE-C.dir/lib/loadclients.c.i
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/loadclients.c > CMakeFiles/SAE-C.dir/lib/loadclients.c.i
 
 CMakeFiles/SAE-C.dir/lib/loadclients.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SAE-C.dir/lib/loadclients.c.s"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/loadclients.c" -o CMakeFiles/SAE-C.dir/lib/loadclients.c.s
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/loadclients.c -o CMakeFiles/SAE-C.dir/lib/loadclients.c.s
 
 CMakeFiles/SAE-C.dir/lib/addclient.c.obj: CMakeFiles/SAE-C.dir/flags.make
 CMakeFiles/SAE-C.dir/lib/addclient.c.obj: ../lib/addclient.c
 CMakeFiles/SAE-C.dir/lib/addclient.c.obj: CMakeFiles/SAE-C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/SAE-C.dir/lib/addclient.c.obj"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SAE-C.dir/lib/addclient.c.obj -MF CMakeFiles/SAE-C.dir/lib/addclient.c.obj.d -o CMakeFiles/SAE-C.dir/lib/addclient.c.obj -c "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/addclient.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/SAE-C.dir/lib/addclient.c.obj"
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SAE-C.dir/lib/addclient.c.obj -MF CMakeFiles/SAE-C.dir/lib/addclient.c.obj.d -o CMakeFiles/SAE-C.dir/lib/addclient.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/addclient.c
 
 CMakeFiles/SAE-C.dir/lib/addclient.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SAE-C.dir/lib/addclient.c.i"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/addclient.c" > CMakeFiles/SAE-C.dir/lib/addclient.c.i
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/addclient.c > CMakeFiles/SAE-C.dir/lib/addclient.c.i
 
 CMakeFiles/SAE-C.dir/lib/addclient.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SAE-C.dir/lib/addclient.c.s"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/addclient.c" -o CMakeFiles/SAE-C.dir/lib/addclient.c.s
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/addclient.c -o CMakeFiles/SAE-C.dir/lib/addclient.c.s
 
 CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj: CMakeFiles/SAE-C.dir/flags.make
 CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj: ../lib/displayallclients.c
 CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj: CMakeFiles/SAE-C.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj -MF CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj.d -o CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj -c "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/displayallclients.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj"
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj -MF CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj.d -o CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/displayallclients.c
 
 CMakeFiles/SAE-C.dir/lib/displayallclients.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SAE-C.dir/lib/displayallclients.c.i"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/displayallclients.c" > CMakeFiles/SAE-C.dir/lib/displayallclients.c.i
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/displayallclients.c > CMakeFiles/SAE-C.dir/lib/displayallclients.c.i
 
 CMakeFiles/SAE-C.dir/lib/displayallclients.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SAE-C.dir/lib/displayallclients.c.s"
-	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/displayallclients.c" -o CMakeFiles/SAE-C.dir/lib/displayallclients.c.s
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/displayallclients.c -o CMakeFiles/SAE-C.dir/lib/displayallclients.c.s
+
+CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj: CMakeFiles/SAE-C.dir/flags.make
+CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj: ../lib/displayemptyclients.c
+CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj: CMakeFiles/SAE-C.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj"
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj -MF CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj.d -o CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj -c C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/displayemptyclients.c
+
+CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.i"
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/displayemptyclients.c > CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.i
+
+CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.s"
+	C:/MinGW/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/displayemptyclients.c -o CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.s
 
 # Object files for target SAE-C
 SAE__C_OBJECTS = \
@@ -160,7 +174,8 @@ SAE__C_OBJECTS = \
 "CMakeFiles/SAE-C.dir/lib/menu.c.obj" \
 "CMakeFiles/SAE-C.dir/lib/loadclients.c.obj" \
 "CMakeFiles/SAE-C.dir/lib/addclient.c.obj" \
-"CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj"
+"CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj" \
+"CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj"
 
 # External object files for target SAE-C
 SAE__C_EXTERNAL_OBJECTS =
@@ -171,10 +186,11 @@ SAE-C.exe: CMakeFiles/SAE-C.dir/lib/menu.c.obj
 SAE-C.exe: CMakeFiles/SAE-C.dir/lib/loadclients.c.obj
 SAE-C.exe: CMakeFiles/SAE-C.dir/lib/addclient.c.obj
 SAE-C.exe: CMakeFiles/SAE-C.dir/lib/displayallclients.c.obj
+SAE-C.exe: CMakeFiles/SAE-C.dir/lib/displayemptyclients.c.obj
 SAE-C.exe: CMakeFiles/SAE-C.dir/build.make
 SAE-C.exe: CMakeFiles/SAE-C.dir/linklibs.rsp
 SAE-C.exe: CMakeFiles/SAE-C.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable SAE-C.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable SAE-C.exe"
 	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/SAE-C.dir/objects.a
 	C:/MinGW/bin/ar.exe qc CMakeFiles/SAE-C.dir/objects.a @CMakeFiles/SAE-C.dir/objects1.rsp
 	C:/MinGW/bin/gcc.exe -g -Wl,--whole-archive CMakeFiles/SAE-C.dir/objects.a -Wl,--no-whole-archive -o SAE-C.exe -Wl,--out-implib,libSAE-C.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/SAE-C.dir/linklibs.rsp
@@ -188,6 +204,6 @@ CMakeFiles/SAE-C.dir/clean:
 .PHONY : CMakeFiles/SAE-C.dir/clean
 
 CMakeFiles/SAE-C.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code" "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code" "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build" "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build" "C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/CMakeFiles/SAE-C.dir/DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/le-ga/Desktop/Dev/SAE-C/Code C:/Users/le-ga/Desktop/Dev/SAE-C/Code C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build C:/Users/le-ga/Desktop/Dev/SAE-C/Code/build/CMakeFiles/SAE-C.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SAE-C.dir/depend
 

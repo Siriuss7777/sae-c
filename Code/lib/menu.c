@@ -6,7 +6,7 @@
 #include "./headers/loadclients.h"
 #include "./headers/addclient.h"
 #include "./headers/displayallclients.h"
-
+#include "./headers/displayemptyclients.h"
 
 void editClient() {}
 
@@ -15,8 +15,6 @@ void deleteClient() {}
 void Filter() {}
 
 void Search() {}
-
-void displayEmptyClients() {}
 
 void Save() {}
 
@@ -30,8 +28,8 @@ void Menu(Client *list, int lines) // Hédi
     printf("\t3: Supprimer un client \n");
     printf("\t4: Afficher tous les clients\n");
     printf("\t5: Afficher les clients avec un filtre\n");
-    printf("\t6: Chercher un client avec une donnée\n");
-    printf("\t7: Clients ayant une donnée manquante (au moins)\n");
+    printf("\t6: Chercher un client\n");
+    printf("\t7: Afficher tous les clients ayant au moins une donn\202e manquante\n");
     printf("\t8: Sauvegarder\n");
     scanf("%d", &choix); // ------------------ CHANGER SAISIE
 
@@ -56,7 +54,7 @@ void Menu(Client *list, int lines) // Hédi
         Search();
         break;
     case 7:
-        displayEmptyClients();
+        displayEmptyClients(list, *lineCount);
         break;
     case 8:
         Save();

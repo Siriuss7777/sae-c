@@ -1,5 +1,5 @@
 CMakeFiles/SAE-C.dir/lib/addclient.c.obj: \
- C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/lib/addclient.c \
+ C:/Users/le-ga/Desktop/Dev/SAE-C/Code/lib/addclient.c \
  c:\mingw\x86_64-w64-mingw32\include\stdio.h \
  c:\mingw\x86_64-w64-mingw32\include\crtdefs.h \
  c:\mingw\x86_64-w64-mingw32\include\corecrt.h \
@@ -21,8 +21,8 @@ CMakeFiles/SAE-C.dir/lib/addclient.c.obj: \
  c:\mingw\x86_64-w64-mingw32\include\limits.h \
  c:\mingw\x86_64-w64-mingw32\include\sec_api\stdlib_s.h \
  c:\mingw\x86_64-w64-mingw32\include\malloc.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\addclient.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\utils.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\menu.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\utils.h \
- c:\users\administrateur\desktop\cours\saes\algo&c\code\lib\headers\displayallclients.h
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\menu.h \
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\utils.h \
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\utils.h \
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\addclient.h \
+ c:\users\le-ga\desktop\dev\sae-c\code\lib\headers\displayallclients.h

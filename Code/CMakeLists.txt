@@ -8,6 +8,7 @@ set(SRCS
     lib/loadclients.c
     lib/addclient.c
     lib/displayallclients.c
+    lib/displayemptyclients.c
 )
 	
 set(HEADERS
@@ -16,6 +17,7 @@ set(HEADERS
     lib/headers/loadclients.h
     lib/headers/addclient.h
     lib/headers/displayallclients.h
+    lib/headers/displayemptyclients.h
 )
 
 add_executable(SAE-C ${SRCS} ${HEADERS})
