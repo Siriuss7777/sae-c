@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "stdbool.h": "c",
-        "loadclients.h": "c",
-        "utils.h": "c",
-        "string.h": "c",
-        "displayallclients.h": "c"
-    }
-}
