@@ -7,7 +7,7 @@
 #define LONG_LONG_CHAR 140
 #define PATH "test.csv"
 #define CACHE "cache.txt"
-#define CAPTION " Nom                  | Pr\202nom               | Ville                          | Code postal | T\202l.           | Adresse mail                                       | Travail        \n\n"
+#define CAPTION "\n Nom                  | Pr\202nom               | Ville                          | Code postal | T\202l.           | Adresse mail                                       | Travail        \n\n"
 #define NOCHAR "\0"
 
 typedef struct client
@@ -24,5 +24,6 @@ typedef struct client
 char *strsep(char **stringp, const char *delim);
 int isFilled(char *line, int position);
 void displayClient(Client *list, int index, int mode);
+char *strtolower(char *input);
 
 #endif // UTILS_H

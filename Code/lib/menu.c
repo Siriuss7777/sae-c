@@ -4,6 +4,7 @@
 #include "./headers/menu.h"
 #include "./headers/save.h"
 #include "./headers/utils.h"
+#include "./headers/filter.h"
 #include "./headers/addclient.h"
 #include "./headers/loadclients.h"
 #include "./headers/displayallclients.h"
@@ -30,8 +31,10 @@ void Menu(Client *list, int lines, char *path) // Hédi
         printf("\t5: Afficher les clients avec un filtre\n");
         printf("\t6: Chercher un client\n");
         printf("\t7: Afficher tous les clients ayant au moins une donn\202e manquante\n");
-        printf("\t8: Sauvegarder\n");
+        printf("\t8: Sauvegarder et quitter\n");
+        printf("\t9: Quitter sans sauvegarder\n");
         scanf("%d", &choix); // ------------------ CHANGER SAISIE
+        char *salut = "salut";
 
         switch (choix)
         {
@@ -48,7 +51,7 @@ void Menu(Client *list, int lines, char *path) // Hédi
             displayAllClients(list, lines);
             break;
         case 5:
-            Filter();
+            filter(list, lines);
             break;
         case 6:
             Search();
@@ -59,10 +62,8 @@ void Menu(Client *list, int lines, char *path) // Hédi
         case 8:
             save(list, lines, path);
             break;
-
-        default:
-            Menu(list, lines, path);
-            break;
+        case 99:
+            printf("%s", strtolower(salut));
         }
     } while (choix != 9);
 }
