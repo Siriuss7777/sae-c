@@ -3,6 +3,6 @@
 
 #include "utils.h"
 
-void addClient(Client *list, int *lines);
+Client *addClient(Client *list, int *lines);
 
 #endif // _ADD_H

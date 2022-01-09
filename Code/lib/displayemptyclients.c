@@ -24,5 +24,4 @@ void displayEmptyClients(Client *list, int lines)
         }
     }
     printf("\n");
-    Menu(list, lines);
 }

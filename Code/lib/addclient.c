@@ -7,7 +7,7 @@
 #include "./headers/addclient.h"
 #include "./headers/displayallclients.h"
 
-void addClient(Client *list, int *lines) // Hédi
+Client *addClient(Client *list, int *lines) // Hédi
 {
     list = (Client *)realloc(list, sizeof(Client) * (int)(lines + 1));
     *lines = *lines + 1;
@@ -64,8 +64,5 @@ void addClient(Client *list, int *lines) // Hédi
         addClient(list, lines);
     }
     else
-    {
-        Menu(list, *lines);
-        displayAllClients(list, *lines);
-    }
+        return (list);
 }

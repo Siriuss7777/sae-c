@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "./headers/loadclients.h"
 #include "./headers/menu.h"
 #include "./headers/utils.h"
+#include "./headers/loadclients.h"
 
 void displayAllClients(Client list[], int lines)
 {
@@ -13,5 +13,4 @@ void displayAllClients(Client list[], int lines)
         displayClient(list, i, 2);
     }
     printf("\n");
-    Menu(list, lines);
 }

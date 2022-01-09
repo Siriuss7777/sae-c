@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "./headers/loadclients.h"
 #include "./headers/menu.h"
 #include "./headers/utils.h"
+#include "./headers/loadclients.h"
 
-void loadClients(Client *list, char* path) // Bastien
+void loadClients(Client *list, char *path) // Bastien
 {
     char line[LONG_LONG_CHAR],
         copy[LONG_LONG_CHAR],
