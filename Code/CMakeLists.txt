@@ -3,19 +3,23 @@ project(SAE-C)
 
 set(SRCS
     main.c 
-    lib/utils.c
     lib/menu.c
-    lib/loadclients.c
+    lib/save.c
+    lib/utils.c
+    lib/filter.c
     lib/addclient.c
+    lib/loadclients.c
     lib/displayallclients.c
     lib/displayemptyclients.c
 )
 	
 set(HEADERS
-    lib/headers/utils.h
     lib/headers/menu.h
-    lib/headers/loadclients.h
+    lib/headers/save.h
+    lib/headers/utils.h
+    lib/headers/filter.h
     lib/headers/addclient.h
+    lib/headers/loadclients.h
     lib/headers/displayallclients.h
     lib/headers/displayemptyclients.h
 )
