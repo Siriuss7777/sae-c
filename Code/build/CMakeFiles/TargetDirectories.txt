@@ -1,3 +1,0 @@
-C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/CMakeFiles/SAE-C.dir
-C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/CMakeFiles/edit_cache.dir
-C:/Users/Administrateur/Desktop/Cours/SAEs/Algo&C/Code/build/CMakeFiles/rebuild_cache.dir
