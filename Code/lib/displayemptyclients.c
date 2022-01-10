@@ -9,6 +9,7 @@
 
 void displayEmptyClients(Client *list, int lines)
 {
+    int counter;
     printf("\n%s", CAPTION);
     for (int i = 0; i < lines; i++)
     {
@@ -21,7 +22,8 @@ void displayEmptyClients(Client *list, int lines)
             *list[i].job == '\n')
         {
             displayClient(list, i, 2);
+            counter++;
         }
     }
-    printf("\n");
+    printf("\n\nNombre de clients affich\202s: %d\n\n", counter);
 }

@@ -9,7 +9,6 @@
 void save(Client *list, int lines, char *path)
 {
 
-    printf("%s", path);
     FILE *file = fopen(path, "w");
 
     for (int i = 0; i < lines; i++)
@@ -24,5 +23,5 @@ void save(Client *list, int lines, char *path)
                 list[i].job);
     }
     fclose(file);
-    printf("\nSauvegarde réussie\n");
+    printf("\nSauvegarde r\202ussie\n\n");
 }

@@ -5,6 +5,7 @@ set(SRCS
     main.c 
     lib/menu.c
     lib/save.c
+    lib/sort.c
     lib/utils.c
     lib/filter.c
     lib/addclient.c
@@ -16,6 +17,7 @@ set(SRCS
 set(HEADERS
     lib/headers/menu.h
     lib/headers/save.h
+    lib/headers/sort.h
     lib/headers/utils.h
     lib/headers/filter.h
     lib/headers/addclient.h

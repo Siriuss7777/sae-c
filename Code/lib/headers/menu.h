@@ -11,10 +11,6 @@ void editClient();
 
 void deleteClient();
 
-void Filter();
-
 void Search();
-
-void displayEmptyClients();
 
 #endif // _MENU_H
