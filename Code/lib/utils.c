@@ -45,7 +45,9 @@ void displayClient(Client *list, int index, int mode) // Hédi
 // mode 1: affichage avec formatage à gauche
 // mode 2: affichage avec formatage à droite
 {
-    if (mode == 0)
+    switch (mode)
+    {
+    case 0:
         printf("\n\n %s | %s | %s | %s | %s | %s | %s \n",
                list[index].prenom,
                list[index].nom,
@@ -54,7 +56,8 @@ void displayClient(Client *list, int index, int mode) // Hédi
                list[index].tel,
                list[index].mail,
                list[index].job);
-    if (mode == 1)
+        break;
+    case 1:
         printf("\n %-20s | %-20s | %-30s | %-11s | %-14s | %-50s | %-20s \n",
                list[index].prenom,
                list[index].nom,
@@ -63,7 +66,8 @@ void displayClient(Client *list, int index, int mode) // Hédi
                list[index].tel,
                list[index].mail,
                list[index].job);
-    if (mode == 2)
+        break;
+    case 2:
         printf("\n %20s | %20s | %30s | %11s | %14s | %50s | %20s \n",
                list[index].prenom,
                list[index].nom,
@@ -72,6 +76,8 @@ void displayClient(Client *list, int index, int mode) // Hédi
                list[index].tel,
                list[index].mail,
                list[index].job);
+        break;
+    }
 }
 
 char *strtolower(char *input)

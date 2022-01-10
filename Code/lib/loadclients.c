@@ -45,7 +45,7 @@ void loadClients(Client *list, char *path) // Bastien
                 break;
 
             case 4:
-                strcpy(list[clientCount].tel, token);
+                strcpy((char *)list[clientCount].tel, token);
                 // printf("%s | ", list[clientCount].tel);
                 break;
 

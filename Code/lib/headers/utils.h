@@ -7,8 +7,7 @@
 #define LONG_LONG_CHAR 140
 #define PATH "test.csv"
 #define CACHE "cache.txt"
-#define CAPTION "\n Nom                  | Pr\202nom               | Ville                          | Code postal | T\202l.           | Adresse mail                                       | Travail        \n\n"
-#define NOCHAR "\0"
+#define CAPTION "\n Pr\202nom               | Nom                  | Ville                          | Code postal | T\202l.           | Adresse mail                                       | Travail        \n\n"
 
 typedef struct client
 {

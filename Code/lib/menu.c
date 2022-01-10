@@ -36,7 +36,6 @@ void Menu(Client *list, int lines, char *path) // Hédi
                "\t10: Quitter sans sauvegarder\n");
         scanf("%d", &choix); // ------------------ CHANGER SAISIE ^^
 
-        Client *tempList;
         int choixTri;
 
         switch (choix)
@@ -63,23 +62,30 @@ void Menu(Client *list, int lines, char *path) // Hédi
             displayEmptyClients(list, lines);
             break;
         case 8:
-            printf("Trier par:\n"
-                   "\t1. Pr\202nom\n"
-                   "\t2. Nom\n"
-                   "\t3. Ville\n"
-                   "\t4. Code postal\n"
-                   "\t5. T\202l.\n"
-                   "\t6. Mail\n"
-                   "\t7. Travail\n\n");
-            scanf("%d", &choixTri);
-            tempList = (Client *)malloc(lines * sizeof(Client));
+            do
+            {
+                printf("Trier par:\n"
+                       "\t1. Pr\202nom\n"
+                       "\t2. Nom\n"
+                       "\t3. Ville\n"
+                       "\t4. Code postal\n"
+                       "\t5. T\202l.\n"
+                       "\t6. Mail\n"
+                       "\t7. Travail\n\n");
+                scanf("%d", &choixTri);
+            } while (choixTri > 8 && choixTri < 0);
+            // tempList = (Client *)malloc(2 * lines * sizeof(Client));
+            Client *tempList = (Client *)malloc(2 * lines * sizeof(Client));
 
             mergeSort(0, lines, list, tempList, choixTri);
+            // free(tempList);
             displayAllClients(list, lines);
             break;
         case 9:
             save(list, lines, path);
             break;
+        case 99:
+            printf("\nlines: %d\n", lines);
         }
     } while (choix != 10);
 }
