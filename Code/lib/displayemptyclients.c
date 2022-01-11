@@ -19,7 +19,8 @@ void displayEmptyClients(Client *list, int lines)
             *list[i].code_postal == '\0' ||
             *list[i].tel == '\0' ||
             *list[i].mail == '\0' ||
-            *list[i].job == '\n')
+            *list[i].job == '\n' ||
+            *list[i].job == '\0')
         {
             displayClient(list, i, 2);
             counter++;

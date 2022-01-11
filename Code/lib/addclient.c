@@ -35,13 +35,13 @@ Client *addClient(Client *list, int *lines) // Hédi
     {
         printf("Saisissez le code postal: ");
         gets(list[*lines - 1].code_postal);
-    } while (strlen(list[*lines - 1].code_postal) > 5);
+    } while (strlen(list[*lines - 1].code_postal) > MAX_LEN_CP);
 
     do
     {
         printf("Saisissez le num\202ro de t\202l\202phone (forme 00.00.00.00.00): ");
         gets(list[*lines - 1].tel);
-    } while (strlen(list[*lines - 1].tel) > SHORT_CHAR);
+    } while (strlen(list[*lines - 1].tel) > MAX_LEN_TEL);
 
     do
     {

@@ -58,25 +58,21 @@ void mergeSort(int start, int end, Client *list, Client *tempList, int choix)
         }
         if (cursorLeft == halfLines + 1)
         {
-            // tempList[cursor] = list[cursorRight];
             memcpy(&tempList[cursor], &list[cursorRight], sizeof(Client));
             cursorRight++;
         }
         else if (cursorRight == end + 1)
         {
-            // tempList[cursor] = list[cursorLeft];
             memcpy(&tempList[cursor], &list[cursorLeft], sizeof(Client));
             cursorLeft++;
         }
         else if (strcoll(cursorLeftTest, cursorRightTest) < 0)
         {
             memcpy(&tempList[cursor], &list[cursorLeft], sizeof(Client));
-            // tempList[cursor] = list[cursorLeft];
             cursorLeft++;
         }
         else
         {
-            // tempList[cursor] = list[cursorRight];
             memcpy(&tempList[cursor], &list[cursorRight], sizeof(Client));
             cursorRight++;
         }
@@ -84,7 +80,6 @@ void mergeSort(int start, int end, Client *list, Client *tempList, int choix)
 
     for (cursor = start; cursor <= end; cursor++)
     {
-        // list[cursor] = tempList[cursor];
         memcpy(&list[cursor], &tempList[cursor], sizeof(Client));
     }
 }

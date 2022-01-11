@@ -2,6 +2,8 @@
 #define _UTILS_H
 
 #define SHORT_CHAR 20
+#define MAX_LEN_TEL 15
+#define MAX_LEN_CP 6
 #define CHAR 30
 #define LONG_CHAR 50
 #define LONG_LONG_CHAR 140
