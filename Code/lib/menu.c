@@ -74,11 +74,10 @@ void Menu(Client *list, int lines, char *path) // Hédi
                        "\t7. Travail\n\n");
                 scanf("%d", &choixTri);
             } while (choixTri > 8 && choixTri < 0);
-            // tempList = (Client *)malloc(2 * lines * sizeof(Client));
-            Client *tempList = (Client *)malloc(2 * lines * sizeof(Client));
+            Client *tempList = (Client *)malloc(lines * sizeof(Client));
 
-            mergeSort(0, lines, list, tempList, choixTri);
-            // free(tempList);
+            mergeSort(0, lines - 1, list, tempList, choixTri);
+            free(tempList);
             displayAllClients(list, lines);
             break;
         case 9:
