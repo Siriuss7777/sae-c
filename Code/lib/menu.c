@@ -5,8 +5,10 @@
 #include "./headers/menu.h"
 #include "./headers/save.h"
 #include "./headers/sort.h"
+#include "./headers/edit.h"
 #include "./headers/utils.h"
 #include "./headers/filter.h"
+#include "./headers/search.h"
 #include "./headers/addclient.h"
 #include "./headers/loadclients.h"
 #include "./headers/displayallclients.h"
@@ -16,11 +18,9 @@ void editClient() {}
 
 void deleteClient() {}
 
-void Search() {}
-
 void Menu(Client *list, int lines, char *path) // Hédi
 {
-    int choix;
+    int choice;
     do
     {
         printf("Que voulez vous faire :\n"
@@ -29,22 +29,21 @@ void Menu(Client *list, int lines, char *path) // Hédi
                "\t3: Supprimer un client \n"
                "\t4: Afficher tous les clients\n"
                "\t5: Afficher les clients avec un filtre\n"
-               "\t6: Chercher un client\n"
+               "\t6: Rechercher un client\n"
                "\t7: Afficher tous les clients ayant au moins une donn\202e manquante\n"
                "\t8: Trier s\202mantiquement les clients\n"
                "\t9: Sauvegarder et quitter\n"
                "\t10: Quitter sans sauvegarder\n");
-        scanf("%d", &choix); // ------------------ CHANGER SAISIE ^^
+        scanf("%d", &choice); // ------------------ CHANGER SAISIE ^^
 
-        int choixTri;
-
-        switch (choix)
+        int menuChoice;
+        switch (choice)
         {
         case 1:
             list = addClient(list, &lines);
             break;
         case 2:
-            editClient();
+            edit(list, lines);
             break;
         case 3:
             deleteClient();
@@ -53,10 +52,10 @@ void Menu(Client *list, int lines, char *path) // Hédi
             displayAllClients(list, lines);
             break;
         case 5:
-            filter(list, lines);
+            filter(list, lines); // Tri par initiale
             break;
         case 6:
-            Search();
+            search(list, lines);
             break;
         case 7:
             displayEmptyClients(list, lines);
@@ -72,19 +71,21 @@ void Menu(Client *list, int lines, char *path) // Hédi
                        "\t5. T\202l.\n"
                        "\t6. Mail\n"
                        "\t7. Travail\n\n");
-                scanf("%d", &choixTri);
-            } while (choixTri > 8 && choixTri < 0);
+                scanf("%d", &menuChoice);
+            } while (menuChoice > 8 || menuChoice < 0);
             Client *tempList = (Client *)malloc(lines * sizeof(Client));
 
-            mergeSort(0, lines - 1, list, tempList, choixTri);
+            mergeSort(0, lines - 1, list, tempList, menuChoice);
             free(tempList);
             displayAllClients(list, lines);
             break;
         case 9:
-            save(list, lines, path);
+            save(list, lines, path); // Fix y'a rien ds fichier
             break;
+            choice = 10;
         case 99:
-            printf("\nlines: %d\n", lines);
+            printf("debug :)");
+            break;
         }
-    } while (choix != 10);
+    } while (choice != 10);
 }

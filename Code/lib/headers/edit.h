@@ -1,8 +1,8 @@
-#ifndef _SORT_H
-#define _SORT_H
+#ifndef _EDIT_H
+#define _EDIT_H
 
 #include "utils.h"
 
-Client *mergeSort(int start, int end, Client *list, Client *tempList, int choix);
+void edit(Client *list, int lines);
 
-#endif // _SORT_H
+#endif // _EDIT_H

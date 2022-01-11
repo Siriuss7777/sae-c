@@ -6,8 +6,10 @@ set(SRCS
     lib/menu.c
     lib/save.c
     lib/sort.c
+    lib/edit.c
     lib/utils.c
     lib/filter.c
+    lib/search.c
     lib/addclient.c
     lib/loadclients.c
     lib/displayallclients.c
@@ -18,8 +20,10 @@ set(HEADERS
     lib/headers/menu.h
     lib/headers/save.h
     lib/headers/sort.h
+    lib/headers/edit.h
     lib/headers/utils.h
     lib/headers/filter.h
+    lib/headers/search.h
     lib/headers/addclient.h
     lib/headers/loadclients.h
     lib/headers/displayallclients.h

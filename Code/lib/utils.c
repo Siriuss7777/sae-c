@@ -48,7 +48,7 @@ void displayClient(Client *list, int index, int mode) // Hédi
     switch (mode)
     {
     case 0:
-        printf("\n\n %s | %s | %s | %s | %s | %s | %s \n",
+        printf("\n %s | %s | %s | %s | %s | %s | %s \n",
                list[index].prenom,
                list[index].nom,
                list[index].ville,

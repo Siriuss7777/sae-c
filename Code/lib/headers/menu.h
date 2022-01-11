@@ -5,12 +5,8 @@
 
 void Menu(Client *list, int lines, char *path);
 
-void loadClients(Client *list, char *path);
-
 void editClient();
 
 void deleteClient();
-
-void Search();
 
 #endif // _MENU_H

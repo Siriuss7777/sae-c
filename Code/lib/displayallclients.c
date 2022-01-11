@@ -12,5 +12,5 @@ void displayAllClients(Client *list, int lines)
     {
         displayClient(list, i, 2);
     }
-    printf("\n");
+    printf("\n\n");
 }
