@@ -44,6 +44,7 @@ void filter(Client *list, int lines)
                     displayClient(list, i, 1);
                 }
             }
+            free(recherche);
             break;
 
         case 2:
@@ -55,6 +56,7 @@ void filter(Client *list, int lines)
                     displayClient(list, i, 1);
                 }
             }
+            free(recherche);
 
             break;
         case 3:
@@ -66,6 +68,7 @@ void filter(Client *list, int lines)
                     displayClient(list, i, 1);
                 }
             }
+            free(recherche);
 
             break;
 
@@ -79,7 +82,7 @@ void filter(Client *list, int lines)
                     displayClient(list, i, 1);
                 }
             }
-
+            free(recherche);
             break;
 
         default:
@@ -115,6 +118,7 @@ void filter(Client *list, int lines)
                     displayClient(list, i, 1);
                 }
             }
+            free(recherche);
             break;
 
         case 2:
@@ -126,6 +130,7 @@ void filter(Client *list, int lines)
                     displayClient(list, i, 1);
                 }
             }
+            free(recherche);
 
             break;
         case 3:
@@ -137,6 +142,7 @@ void filter(Client *list, int lines)
                     displayClient(list, i, 1);
                 }
             }
+            free(recherche);
 
             break;
 
@@ -150,6 +156,7 @@ void filter(Client *list, int lines)
                     displayClient(list, i, 1);
                 }
             }
+            free(recherche);
 
             break;
 

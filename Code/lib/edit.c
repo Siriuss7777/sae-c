@@ -9,9 +9,7 @@ void edit(Client *list, int lines)
 
     int choix,
         position;
-    char *reponse;
-
-    position = search(list, lines);
+    position = clientSearch(list, lines, "Chercher le client \205 modifier par: ", 0);
 
     do
     {

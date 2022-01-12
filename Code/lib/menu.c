@@ -9,14 +9,11 @@
 #include "./headers/utils.h"
 #include "./headers/filter.h"
 #include "./headers/search.h"
+#include "./headers/delete.h"
 #include "./headers/addclient.h"
 #include "./headers/loadclients.h"
 #include "./headers/displayallclients.h"
 #include "./headers/displayemptyclients.h"
-
-void editClient() {}
-
-void deleteClient() {}
 
 void Menu(Client *list, int lines, char *path) // Hédi
 {
@@ -35,6 +32,7 @@ void Menu(Client *list, int lines, char *path) // Hédi
                "\t9: Sauvegarder et quitter\n"
                "\t10: Quitter sans sauvegarder\n");
         scanf("%d", &choice); // ------------------ CHANGER SAISIE ^^
+        char *salut;
 
         int menuChoice;
         switch (choice)
@@ -46,7 +44,7 @@ void Menu(Client *list, int lines, char *path) // Hédi
             edit(list, lines);
             break;
         case 3:
-            deleteClient();
+            deleteClient(list, &lines);
             break;
         case 4:
             displayAllClients(list, lines);
@@ -55,7 +53,7 @@ void Menu(Client *list, int lines, char *path) // Hédi
             filter(list, lines); // Tri par initiale
             break;
         case 6:
-            search(list, lines);
+            clientSearch(list, lines, "Chercher avec: ", 1);
             break;
         case 7:
             displayEmptyClients(list, lines);
@@ -84,7 +82,7 @@ void Menu(Client *list, int lines, char *path) // Hédi
             break;
             choice = 10;
         case 99:
-            printf("debug :)");
+            input(salut, LONG_CHAR);
             break;
         }
     } while (choice != 10);

@@ -48,7 +48,7 @@ void displayClient(Client *list, int index, int mode) // Hédi
     switch (mode)
     {
     case 0:
-        printf("\n %s | %s | %s | %s | %s | %s | %s \n",
+        printf("\n %s | %s | %s | %s | %s | %s | %s ",
                list[index].prenom,
                list[index].nom,
                list[index].ville,
@@ -58,7 +58,7 @@ void displayClient(Client *list, int index, int mode) // Hédi
                list[index].job);
         break;
     case 1:
-        printf("\n %-20s | %-20s | %-30s | %-11s | %-14s | %-50s | %-20s \n",
+        printf("\n %-20s | %-20s | %-30s | %-11s | %-14s | %-50s | %-20s ",
                list[index].prenom,
                list[index].nom,
                list[index].ville,
@@ -68,7 +68,7 @@ void displayClient(Client *list, int index, int mode) // Hédi
                list[index].job);
         break;
     case 2:
-        printf("\n %20s | %20s | %30s | %11s | %14s | %50s | %20s \n",
+        printf("\n %20s | %20s | %30s | %11s | %14s | %50s | %20s ",
                list[index].prenom,
                list[index].nom,
                list[index].ville,
@@ -87,4 +87,11 @@ char *strtolower(char *input)
     for (int i = 0; i < strlen(output); i++)
         output[i] = tolower(output[i]);
     return output;
+}
+
+char *input(char *buffer, int size)
+{
+    fgets(buffer, size, stdin);
+    buffer[strcspn(buffer, "\n")] = 0;
+    return buffer;
 }

@@ -6,12 +6,28 @@
 #include "./headers/utils.h"
 #include "./headers/search.h"
 
-int search(Client *list, int lines)
+int clientSearch(Client *list, int lines, char *text, int dispClient)
+{
+    int option,
+        result;
+
+    printf("%s \n"
+           "1: Nom/Pr\202nom \n"
+           "2: Mail\n"
+           "3: T\202l.\n",
+           text);
+
+    scanf("%d", &option);
+    result = search(list, lines, option, dispClient);
+    return result;
+}
+
+int search(Client *list, int lines, int option, int dispClient)
 {
     // mergeSort(0, lines - 1, list, lines);
 
-    int option, start = 0,
-                end = lines - 1;
+    int start = 0,
+        end = lines - 1;
     int mid = (start + end) / 2;
 
     char *toSearch = (char *)malloc(LONG_CHAR),
@@ -20,13 +36,6 @@ int search(Client *list, int lines)
 
     Client *sortedList = (Client *)malloc(lines * sizeof(Client)),
            *tempList = (Client *)malloc(lines * sizeof(Client));
-
-    printf("Chercher avec: \n"
-           "1: Nom/Pr\202nom \n"
-           "2: Mail\n"
-           "3: T\202l.\n");
-
-    scanf("%d", &option);
 
     if (option != 1)
     {
@@ -78,7 +87,11 @@ int search(Client *list, int lines)
 
             if (strcmp(list[mid].mail, toSearch) == 0)
             {
-                displayClient(list, mid, 1);
+                if (dispClient)
+                    displayClient(list, mid, 1);
+                free(toSearch);
+                free(tempList);
+                free(sortedList);
                 return mid;
             }
 
@@ -106,7 +119,11 @@ int search(Client *list, int lines)
 
             if (strcmp(list[mid].tel, toSearch) == 0)
             {
-                displayClient(list, mid, 1);
+                if (dispClient)
+                    displayClient(list, mid, 1);
+                free(toSearch);
+                free(tempList);
+                free(sortedList);
                 return mid;
             }
 
@@ -124,7 +141,7 @@ int search(Client *list, int lines)
         break;
 
     default:
-        search(list, lines);
+        search(list, lines, option, dispClient);
         break;
     }
 

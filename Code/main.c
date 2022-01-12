@@ -30,7 +30,7 @@ int main()
     }
     fclose(file);
 
-    Client *list = (Client *)malloc(sizeof(Client) * lines);
+    Client *list = (Client *)malloc(sizeof(Client) * (lines + 1));
     loadClients(list, path);
     Menu(list, lines, path);
 }

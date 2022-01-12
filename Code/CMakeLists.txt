@@ -10,6 +10,7 @@ set(SRCS
     lib/utils.c
     lib/filter.c
     lib/search.c
+    lib/delete.c
     lib/addclient.c
     lib/loadclients.c
     lib/displayallclients.c
@@ -24,6 +25,7 @@ set(HEADERS
     lib/headers/utils.h
     lib/headers/filter.h
     lib/headers/search.h
+    lib/headers/delete.h
     lib/headers/addclient.h
     lib/headers/loadclients.h
     lib/headers/displayallclients.h
