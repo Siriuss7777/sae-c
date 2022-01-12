@@ -13,7 +13,7 @@ void save(Client *list, int lines, char *path)
 
     for (int i = 0; i < lines; i++)
     {
-        fprintf(file, "%s,%s,%s,%s,%s,%s,%s",
+        fprintf(file, "\n%s,%s,%s,%s,%s,%s,%s",
                 list[i].prenom,
                 list[i].nom,
                 list[i].ville,

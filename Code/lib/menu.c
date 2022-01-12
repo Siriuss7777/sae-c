@@ -79,8 +79,8 @@ void Menu(Client *list, int lines, char *path) // Hédi
             break;
         case 9:
             save(list, lines, path); // Fix y'a rien ds fichier
-            break;
             choice = 10;
+            break;
         case 99:
             input(salut, LONG_CHAR);
             break;
