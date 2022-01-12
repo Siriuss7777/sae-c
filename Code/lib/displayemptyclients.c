@@ -1,3 +1,4 @@
+#include <time.h>
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -7,9 +8,9 @@
 #include "./headers/addclient.h"
 #include "./headers/displayallclients.h"
 
-void displayEmptyClients(Client *list, int lines)
+void displayEmptyClients(Client *list, int lines) // Bastien
 {
-    int counter;
+    int counter = 0;
     printf("\n%s", CAPTION);
     for (int i = 0; i < lines; i++)
     {

@@ -5,7 +5,7 @@
 #include "./headers/utils.h"
 #include "./headers/loadclients.h"
 
-void displayAllClients(Client *list, int lines)
+void displayAllClients(Client *list, int lines) // Bastien
 {
     printf("\n%s", CAPTION);
     for (int i = 0; i < lines; i++)

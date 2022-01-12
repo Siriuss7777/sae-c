@@ -25,7 +25,6 @@ typedef struct client
 char *strsep(char **stringp, const char *delim);
 int isFilled(char *line, int position);
 void displayClient(Client *list, int index, int mode);
-char *input(char *buffer, int size);
 char *strtolower(char *input);
 
 #endif // UTILS_H

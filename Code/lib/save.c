@@ -6,14 +6,14 @@
 #include "./headers/menu.h"
 #include "./headers/save.h"
 
-void save(Client *list, int lines, char *path)
+void save(Client *list, int lines, char *path) // Bastien
 {
 
     FILE *file = fopen(path, "w");
 
     for (int i = 0; i < lines; i++)
     {
-        fprintf(file, "\n%s,%s,%s,%s,%s,%s,%s",
+        fprintf(file, "%s,%s,%s,%s,%s,%s,%s",
                 list[i].prenom,
                 list[i].nom,
                 list[i].ville,

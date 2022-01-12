@@ -6,7 +6,7 @@
 #include "./headers/utils.h"
 #include "./headers/search.h"
 
-int clientSearch(Client *list, int lines, char *text, int dispClient)
+int clientSearch(Client *list, int lines, char *text, int dispClient) // Hédi
 {
     int option,
         result;
@@ -22,20 +22,23 @@ int clientSearch(Client *list, int lines, char *text, int dispClient)
     return result;
 }
 
-int search(Client *list, int lines, int option, int dispClient)
+int search(Client *list, int lines, int option, int dispClient) // Hédi
 {
     // mergeSort(0, lines - 1, list, lines);
 
     int start = 0,
-        end = lines - 1;
+        end = lines - 1,
+        namesCounter;
     int mid = (start + end) / 2;
 
     char *toSearch = (char *)malloc(LONG_CHAR),
-         *prenom,
-         *nom;
+         *prenom = (char *)malloc(LONG_CHAR),
+         *nom = (char *)malloc(LONG_CHAR),
+         *champ;
 
     Client *sortedList = (Client *)malloc(lines * sizeof(Client)),
-           *tempList = (Client *)malloc(lines * sizeof(Client));
+           *tempList = (Client *)malloc(lines * sizeof(Client)),
+           *namesList = (Client *)malloc(lines * sizeof(Client));
 
     if (option != 1)
     {
@@ -45,33 +48,56 @@ int search(Client *list, int lines, int option, int dispClient)
     }
     switch (option)
     {
-
-        // case 1:
-        //     printf("Entrez le prénom a chercher :\n");
+    case 1:
+        printf("Recherche non fonctionnelle");
+        break;
+        //     printf("Entrez le pr\202nom \205 chercher :\n");
+        //     fflush(stdin);
         //     gets(prenom);
-        //     printf("Entrez le nom a chercher :\n");
+        //     prenom = strtolower(prenom);
+        //     printf("Entrez le nom \205 chercher :\n");
+        //     fflush(stdin);
         //     gets(nom);
+        //     nom = strtolower(nom);
 
-        //     while (start < end)
+        //     for (int i = 0; i < lines - 1; i++)
         //     {
-        //         mid = (start + end) / 2;
-        //         mergeSort(0, lines, list, tempList, 0);
+        //         champ = strtolower(list[i].prenom);
+        //         if (strcmp(champ, prenom) == 0) //
+        //         {
+        //             namesList[namesCounter] = list[i];
+        //             namesCounter++;
+        //             printf("ajoute:");
+        //             displayClient(namesList, namesCounter, 0);
+        //         }
+        //     }
 
-        //         if (strcmp(list[mid].prenom, prenom) == 0)
+        //     while (start < namesCounter)
+        //     {
+        //         mid = (start + namesCounter) / 2;
+        //         mergeSort(0, namesCounter, namesList, tempList, 0);
+
+        //         if (strcmp(namesList[mid].nom, nom) == 0)
         //         {
 
         //             displayClient(list, mid, 1);
+        //             free(toSearch);
+        //             free(tempList);
+        //             free(sortedList);
+        //             free(namesList);
+        //             free(prenom);
+        //             free(nom);
         //             return mid;
         //         }
 
-        //         else if (strcmp(list[mid].prenom, prenom) < 0)
+        //         else if (strcmp(list[mid].nom, nom) < 0)
         //         {
         //             start = mid + 1;
         //         }
 
-        //         else if (strcmp(list[mid].prenom, prenom) > 0)
+        //         else if (strcmp(list[mid].nom, nom) > 0)
         //         {
-        //             end = mid;
+        //             namesCounter = mid;
         //         }
         //     }
 
@@ -88,7 +114,10 @@ int search(Client *list, int lines, int option, int dispClient)
             if (strcmp(list[mid].mail, toSearch) == 0)
             {
                 if (dispClient)
+                {
                     displayClient(list, mid, 1);
+                    printf("\n");
+                }
                 free(toSearch);
                 free(tempList);
                 free(sortedList);
@@ -120,7 +149,10 @@ int search(Client *list, int lines, int option, int dispClient)
             if (strcmp(list[mid].tel, toSearch) == 0)
             {
                 if (dispClient)
+                {
                     displayClient(list, mid, 1);
+                    printf("\n");
+                }
                 free(toSearch);
                 free(tempList);
                 free(sortedList);

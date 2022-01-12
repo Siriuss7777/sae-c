@@ -5,7 +5,7 @@
 
 #include "./headers/utils.h"
 
-void mergeSort(int start, int end, Client *list, Client *tempList, int choix)
+void mergeSort(int start, int end, Client *list, Client *tempList, int choix) // Bastien
 {
     if (end <= start)
     {

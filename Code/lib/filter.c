@@ -6,7 +6,7 @@
 #include "./headers/utils.h"
 #include "./headers/filter.h"
 
-void filter(Client *list, int lines)
+void filter(Client *list, int lines) // Hédi
 {
     int gOption,
         option;
@@ -17,7 +17,6 @@ void filter(Client *list, int lines)
     printf("\t2: Valeur commencant par la saisie \n");
 
     scanf("%d", &gOption);
-    printf("j'ai %d", gOption);
     if (gOption == 1)
     {
         printf("\nFiltrer par: \n"); //

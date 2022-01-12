@@ -1,3 +1,4 @@
+#include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -18,9 +19,9 @@ int main()
 
     do
     {
-        printf("Entrez l'adresse du fichier a lire : \n");
-        gets(path);
-        file = fopen(path, "r");
+        printf("Entrez l'adresse du fichier a lire : \n"); // Hédi
+        gets(path);                                        // Hédi
+        file = fopen(path, "r");                           // Hédi
 
     } while (file == NULL);
 
@@ -31,6 +32,9 @@ int main()
     fclose(file);
 
     Client *list = (Client *)malloc(sizeof(Client) * (lines + 1));
+    clock_t begin = clock();
     loadClients(list, path);
+    clock_t end = clock();
+    printf("Temps de chargement: %ldms\n", (end - begin) * 1000 / CLOCKS_PER_SEC);
     Menu(list, lines, path);
 }

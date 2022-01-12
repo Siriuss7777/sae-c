@@ -1,3 +1,4 @@
+#include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -33,6 +34,8 @@ void Menu(Client *list, int lines, char *path) // Hédi
                "\t10: Quitter sans sauvegarder\n");
         scanf("%d", &choice); // ------------------ CHANGER SAISIE ^^
         char *salut;
+        clock_t begin,
+            end;
 
         int menuChoice;
         switch (choice)
@@ -50,7 +53,10 @@ void Menu(Client *list, int lines, char *path) // Hédi
             displayAllClients(list, lines);
             break;
         case 5:
+            begin = clock();
             filter(list, lines); // Tri par initiale
+            end = clock();
+            printf("Temps d'ex\202cution: %ldms\n", (end - begin) * 1000 / CLOCKS_PER_SEC);
             break;
         case 6:
             clientSearch(list, lines, "Chercher avec: ", 1);
@@ -73,16 +79,18 @@ void Menu(Client *list, int lines, char *path) // Hédi
             } while (menuChoice > 8 || menuChoice < 0);
             Client *tempList = (Client *)malloc(lines * sizeof(Client));
 
+            begin = clock();
             mergeSort(0, lines - 1, list, tempList, menuChoice);
+            end = clock();
             free(tempList);
             displayAllClients(list, lines);
+            printf("Temps d'ex\202cution: %ldms\n", (end - begin) * 1000 / CLOCKS_PER_SEC);
             break;
         case 9:
-            save(list, lines, path); // Fix y'a rien ds fichier
+            save(list, lines, path);
             choice = 10;
             break;
         case 99:
-            input(salut, LONG_CHAR);
             break;
         }
     } while (choice != 10);

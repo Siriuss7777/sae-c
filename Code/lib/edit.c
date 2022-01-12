@@ -4,7 +4,7 @@
 #include "./headers/utils.h"
 #include "./headers/search.h"
 
-void edit(Client *list, int lines)
+void edit(Client *list, int lines) // Hédi
 {
 
     int choix,
@@ -68,10 +68,6 @@ void edit(Client *list, int lines)
             printf("\nSaisissez le nouveau travail: ");
             fflush(stdin);
             gets(list[position].job);
-            break;
-
-        default:
-            edit(list, lines);
             break;
         }
     } while (choix != 8);

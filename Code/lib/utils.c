@@ -80,18 +80,11 @@ void displayClient(Client *list, int index, int mode) // Hédi
     }
 }
 
-char *strtolower(char *input)
+char *strtolower(char *input) // Bastien
 {
     char *output = (char *)malloc(strlen(input) * sizeof(char));
     strcpy(output, input);
     for (int i = 0; i < strlen(output); i++)
         output[i] = tolower(output[i]);
     return output;
-}
-
-char *input(char *buffer, int size)
-{
-    fgets(buffer, size, stdin);
-    buffer[strcspn(buffer, "\n")] = 0;
-    return buffer;
 }

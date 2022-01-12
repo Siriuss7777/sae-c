@@ -59,7 +59,7 @@ void loadClients(Client *list, char *path) // Bastien
                 // printf("%s\n", list[clientCount].job);
                 break;
             default:
-                printf("ERREUR");
+                printf("ERREUR || LIGNE: %d\n", clientCount);
                 break;
             }
             count++;
